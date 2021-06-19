@@ -230,13 +230,7 @@ function dibujarRetornos()
 
 
 //Funcion aleatorio
-for(var i=0; i<10; i++)
-{
 
-    z = aleatorio(50,80);
-    document.write(z + ", ");
-
-}
 
 
 function aleatorio (maxi,min)
