@@ -4,9 +4,7 @@ var granja = document.getElementById("granjita");
 var papel = granja.getContext("2d");
 var boton = document.getElementById("boton");
 
-var z = aleatorio(1,500);
-var d = aleatorio(500,1);
-var c = aleatorio(200,100);
+
 
 var cantidad_Pollos = aleatorio(1, 5);
 var cantidad_Vacas = aleatorio(2,7);
@@ -29,7 +27,7 @@ var polloRetornoX = [];
 var polloRetornoY = [];
 var vacaRetornoX = [];
 var vacaRetornoY = [];
-var polloCantidad = [];
+
 
 
 
@@ -131,7 +129,8 @@ function dibujar()
         papel.drawImage(vaca.animal, x, y);
         vacaRetornoX.push(x);
         vacaRetornoY.push(y);
-    }};
+    }
+};
 
     if (pollo.cargaOK == true)
     {
@@ -146,15 +145,13 @@ function dibujar()
         papel.drawImage(pollo.animal, x, y);
         polloRetornoX.push(x);
         polloRetornoY.push(y);
-    }};
+    }
+ };
 
-    if (cerdo.cargaOK == true){
-        
-
+    if (cerdo.cargaOK == true)
+    {
         papel.drawImage(cerdo.animal, xPosition, yPosition);
     };
-    
-
 };
 
 
